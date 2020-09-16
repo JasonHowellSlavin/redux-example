@@ -3,52 +3,44 @@ import './CardHolder.scss';
 import { connect } from 'react-redux';
 import Header from '../Header/Header';
 import Card from '../Card/Card';
-import data from '../../data';
+import { sort } from '../../actions/CardHolderActions';
 
 class CardHolder extends Component{
     constructor(props) {
         super(props);
-        this.state = {
-            title: "Redux Tutorial",
-            message: "Welcome to the React Turotial Lunch and Learn",
-            cards: []
-        };
+        this.sort = this.sort.bind(this);
     }
 
-    // update(field, text) {
-    //     this.props.update(field, text);
-    // }    
-
-    componentDidMount() {
-        console.log(data, 'data');
-
-        this.setState({cards: data});
-    }
+    sort(value) {
+        this.props.sort(value);
+    }  
 
     render(){
         return(
             <section className={"card-holder"}>
-                <Header title={this.state.title} message={this.state.message}/>
+                <Header title={this.props.title} message={this.props.message}/>
+                <div>
+                    <button value={this.props.sortType} onClick={(e) => this.sort(e.target.value)}>{this.props.sortType}</button>
+                </div>
                 <section className={'cards'}>
-                {this.state.cards.map((card) => <Card key={`dog:${card.id}`} id={card.id} name={card.name} type={card.type}/>)}
+                {this.props.cards.map((card) => <Card key={`dog:${card.id}`} id={card.id} name={card.name} type={card.type}/>)}
                 </section>
             </section>
         )
     }
 }
 
-// function mapStateToProps(state) {
-//     return {
-//       title: state.cardReducer.title,
-//       description: state.cardReducer.description,
-//       currentImage: state.cardReducer.currentImage
-//     };
-//   }
+function mapStateToProps(state) {
+    return {
+      title: state.cardHolderReducer.title,
+      message: state.cardHolderReducer.message,
+      cards: state.cardHolderReducer.cards,
+      sortType: state.cardHolderReducer.sortType
+    };
+  }
 
-// const mapDispatchToProps = {
-//     update
-// };
+const mapDispatchToProps = {
+    sort
+};
 
-// export default connect(mapStateToProps, mapDispatchToProps)(Card);
-
-export default CardHolder;
+export default connect(mapStateToProps, mapDispatchToProps)(CardHolder);
