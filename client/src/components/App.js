@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './App.scss';
-import Counter from './Counter/Counter';
-import Card from './Card/Card';
+import CardHolder from './CardHolder/CardHolder';
 import rootReducer from '../reducers/RootReducer';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
@@ -14,7 +13,7 @@ class App extends React.Component{
     render(){
         return(
             <Provider store={store}>
-                <Card />
+                <CardHolder />
             </Provider>
         )
     }

@@ -8,7 +8,6 @@ const cardState = {
 };
 
 export default function counterReducer(state = cardState, action) {
-    console.log('reducer', state, action);
     let newState = {...state};
 
     switch(action.type) {

@@ -1,10 +1,11 @@
 .card {
-    width: 300px;
-    min-height: 550px;
+    width: 230px;
+    height: 200px;
     border: 1px solid #333333;
     box-shadow: 1px 1px 5px 5px #CDCDCD;
+    margin: 20px 20px 20px 0;
 
-    img {
-        width: 100%;
+    p {
+        padding: 5px 20px;
     }
 }
