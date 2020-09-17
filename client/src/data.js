@@ -5,7 +5,8 @@ const data = [
         type: 'Labrador',
         age: 2,
         group: 'Good Doggies',
-        tags: 'Fun'
+        tags: 'Fun',
+        color: '#EEE'
     },
     {
         id: 2,
@@ -13,7 +14,8 @@ const data = [
         type: 'Beagle',
         age: 8,
         group: 'Good Doggies',
-        tags: 'Sweet'
+        tags: 'Sweet',
+        color: '#EEE'
     },
     {
         id: 3,
@@ -21,7 +23,8 @@ const data = [
         type: 'Bulldog',
         age: 4,
         group: 'Good Doggies',
-        tags: ['Active', 'Adorable']
+        tags: ['Active', 'Adorable'],
+        color: '#EEE'
     },
     {
         id: 4,
@@ -29,7 +32,8 @@ const data = [
         type: 'Dachshund',
         age: 1,
         group: 'Nice Doggies',
-        tags: 'Sweet'
+        tags: 'Sweet',
+        color: '#EEE'
     },
     {
         id: 5,
@@ -37,7 +41,8 @@ const data = [
         type: 'Poodle',
         age: 10,
         group: 'Nice Doggies',
-        tags: ['Sweet', 'Active']
+        tags: ['Sweet', 'Active'],
+        color: '#EEE'
     },
     {
         id: 6,
@@ -45,15 +50,25 @@ const data = [
         type: 'Rottweiler',
         age: 3,
         group: 'Nice Doggies',
-        tags: ['Fetcher', 'Fun']
+        tags: ['Fetcher', 'Fun'],
+        color: '#EEE'
     },
+    // {
+    //     id: 7,
+    //     name: 'Admiral Snackers',
+    //     type: 'Pomeranian',
+    //     age: 5,
+    //     group: 'Nice Doggies',
+    //     tags: 'Excitable'
+    // },
     {
         id: 7,
         name: 'Admiral Snackers',
         type: 'Pomeranian',
         age: 5,
         group: 'Nice Doggies',
-        tags: 'Excitable'
+        tags: 'Excitable', 
+        color: '#EEE',
     },
     {
         id: 8,
@@ -61,7 +76,8 @@ const data = [
         type: 'Border Collie',
         age: 9,
         group: 'Fun Pooches',
-        tags: 'Fetcher'
+        tags: 'Fetcher',
+        color: '#EEE'
     },
     {
         id: 9,
@@ -69,7 +85,8 @@ const data = [
         type: 'Irish Setter',
         age: 1,
         group: 'Fun Pooches',
-        tags: 'Sweet'
+        tags: 'Sweet',
+        color: '#EEE'
     },
     {
         id: 10,
@@ -77,7 +94,8 @@ const data = [
         type: 'Chihuahua',
         age: 1,
         group: 'Fun Pooches',
-        tags: 'Excitable'
+        tags: 'Excitable',
+        color: '#EEE'
     },
     {
         id: 11,
@@ -85,7 +103,8 @@ const data = [
         type: 'Husky',
         age: 13,
         group: 'Fun Pooches',
-        tags: 'Chill'
+        tags: 'Chill',
+        color: '#EEE'
     },
     {
         id: 12,
@@ -93,7 +112,8 @@ const data = [
         type: 'Corgi',
         age: 3,
         group: 'Fun Pooches',
-        tags: 'Fetcher'
+        tags: 'Fetcher',
+        color: '#EEE'
     },
     {
         id: 13,
@@ -101,7 +121,8 @@ const data = [
         type: 'St. Bernard',
         age: 8,
         group: 'Loyal Doggos',
-        tags: ['Fetcher', 'Excitable', 'Fun']
+        tags: ['Fetcher', 'Excitable', 'Fun'],
+        color: '#EEE'
     },
     {
         id: 14,
@@ -109,7 +130,8 @@ const data = [
         type: 'Jack Russel Terrier',
         age: 14,
         group: 'Loyal Doggos',
-        tags: ['Chill', 'Relaxed']
+        tags: ['Chill', 'Relaxed'],
+        color: '#EEE'
     },
     {
         id: 15,
@@ -117,7 +139,8 @@ const data = [
         type: 'Bull Terrier',
         age: 7,
         group: 'Loyal Doggos',
-        tags: ['Tug Of War', 'Energetic']
+        tags: ['Tug Of War', 'Energetic'],
+        color: '#EEE'
     },
     {
         id: 16,
@@ -125,7 +148,8 @@ const data = [
         type: 'Labrador',
         age: 4,
         group: 'Loyal Doggos',
-        tags: 'Tug of War'
+        tags: 'Tug of War',
+        color: '#EEE'
     },
     {
         id: 17,
@@ -133,7 +157,8 @@ const data = [
         type: 'Bloodhound',
         age: 8,
         group: 'Just The Sweetest',
-        tags: ['Tug of War', 'Fetcher', 'Excitable']
+        tags: ['Tug of War', 'Fetcher', 'Excitable'],
+        color: '#EEE'
     },
     {
         id: 18,
@@ -141,7 +166,8 @@ const data = [
         type: 'French Bulldog',
         age: 4,
         group: 'Just The Sweetest',
-        tags: 'Chill'
+        tags: 'Chill',
+        color: '#EEE'
     }
 ]
 

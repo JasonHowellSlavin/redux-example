@@ -23,7 +23,7 @@ class CardHolder extends Component{
                     <button value={this.props.sortType} onClick={(e) => this.sort(e.target.value)}>{this.props.sortType}</button>
                 </div>
                 <section className={'cards'}>
-                {this.props.cards.map((card) => <Card key={`dog:${card.id}`} id={card.id} name={card.name} type={card.type}/>)}
+                {this.props.cards.map((card) => <Card key={`dog:${card.id}`} id={card.id} name={card.name} type={card.type} color={card.color}/>)}
                 </section>
             </section>
         )
